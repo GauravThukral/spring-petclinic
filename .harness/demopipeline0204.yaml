@@ -20,6 +20,7 @@ pipeline:
           cloneCodebase: true
           caching:
             enabled: true
+            paths: []
           platform:
             os: Linux
             arch: Amd64
@@ -38,3 +39,7 @@ pipeline:
                     shell: Sh
                     command: mvn clean install
                     privileged: true
+          sharedPaths:
+            - /root/.m2/repository/
+          buildIntelligence:
+            enabled: false
