@@ -35,7 +35,7 @@ pipeline:
                   identifier: Run_1
                   spec:
                     connectorRef: account.harnessImage
-                    image: dev-java17-maven
+                    image: maven:3.9.1-eclipse-temurin-17-alpine
                     shell: Bash
                     command: mvn clean install
                     privileged: true
