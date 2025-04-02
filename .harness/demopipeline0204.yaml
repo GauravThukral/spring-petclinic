@@ -33,7 +33,7 @@ pipeline:
                   name: Run_1
                   identifier: Run_1
                   spec:
+                    connectorRef: dockerhub
+                    image: springboot-petclinic
                     shell: Sh
-                    command: |-
-                      yum install openjdk-17-jdk
-                      mvn clean install
+                    command: mvn clean install
