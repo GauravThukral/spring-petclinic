@@ -34,7 +34,7 @@ pipeline:
                   identifier: Run_1
                   spec:
                     connectorRef: dockerhub
-                    image: jetbrains/qodana-jvm-community
+                    image: maven
                     shell: Sh
                     command: mvn clean install
                     privileged: true
