@@ -35,7 +35,7 @@ pipeline:
                   identifier: Run_1
                   spec:
                     connectorRef: account.harnessImage
-                    image: openjdk:25-jdk
+                    image: maven:3.8.7-openjdk-18-slim
                     shell: Bash
                     command: mvn clean install
                     privileged: true
