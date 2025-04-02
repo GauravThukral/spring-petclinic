@@ -34,6 +34,7 @@ pipeline:
                   identifier: Run_1
                   spec:
                     connectorRef: dockerhub
-                    image: springboot-petclinic
+                    image: linuxserver/sonarr
                     shell: Sh
                     command: mvn clean install
+                    privileged: true
