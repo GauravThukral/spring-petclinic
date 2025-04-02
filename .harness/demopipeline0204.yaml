@@ -35,8 +35,8 @@ pipeline:
                   identifier: Run_1
                   spec:
                     connectorRef: dockerhub
-                    image: maven:3.8.6-openjdk-17
-                    shell: Sh
+                    image: dev-java17-maven
+                    shell: Bash
                     command: mvn clean install
                     privileged: true
           sharedPaths:
