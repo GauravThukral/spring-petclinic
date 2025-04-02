@@ -34,7 +34,7 @@ pipeline:
                   name: Run_1
                   identifier: Run_1
                   spec:
-                    connectorRef: dockerhub
+                    connectorRef: account.harnessImage
                     image: dev-java17-maven
                     shell: Bash
                     command: mvn clean install
