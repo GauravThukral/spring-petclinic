@@ -34,7 +34,7 @@ pipeline:
                   identifier: Run_1
                   spec:
                     connectorRef: dockerhub
-                    image: linuxserver/sonarr
+                    image: jetbrains/qodana-jvm-community
                     shell: Sh
                     command: mvn clean install
                     privileged: true
